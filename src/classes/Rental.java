@@ -1,4 +1,4 @@
-package Class;
+package classes;
 
 public class Rental {
     final Movie movie;
@@ -14,10 +14,10 @@ public class Rental {
         return movie;
     }
 
-    double getCharge() {
+    public double getCharge() {
         return movie.getCharge(daysRented);
     }
-    int getFrequentRenterPoints() {
+    public int getFrequentRenterPoints() {
         return movie.getFrequentRenterPoints(daysRented);
     }
 

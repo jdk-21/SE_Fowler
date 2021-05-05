@@ -2,7 +2,9 @@ package tests;
 
 import org.junit.Before;
 import org.junit.Test;
-import Class.*;
+import classes.Movie;
+import classes.Rental;
+import classes.Customer;
 
 import static org.junit.Assert.assertEquals;
 
@@ -12,19 +14,15 @@ public class CustomerTest {
     private final String c1Name = "Müller";
     private Customer c2;
     private final String c2Name = "Meier";
-    private Movie m1;
     private final String m1Name = "movieName1";
-    private Movie m2;
     private final String m2Name = "movieName2";
-    private Rental r1;
-    private Rental r2;
 
     @Before
     public void initialize() {
-        m1 = new Movie(m1Name, 1);
-        m2 = new Movie(m2Name, 2);
-        r1 = new Rental(m1, 10);
-        r2 = new Rental(m2, 5);
+        Movie m1 = new Movie(m1Name, 1);
+        Movie m2 = new Movie(m2Name, 2);
+        Rental r1 = new Rental(m1, 10);
+        Rental r2 = new Rental(m2, 5);
         c1 = new Customer(c1Name);
         c2 = new Customer(c2Name);
         c1.addRental(r1);

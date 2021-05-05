@@ -1,4 +1,4 @@
-package Class;
+package classes;
 
 public class Movie {
     public static final int CHILDREN = 2;
@@ -6,7 +6,7 @@ public class Movie {
     public static final int NEW_RELEASE = 1;
     private final String title;
     private int priceCode;
-    Price price;
+    private Price price;
     public Movie(String newTitle, int newPriceCode) {
         title = newTitle;
         setPriceCode(newPriceCode);
@@ -33,7 +33,7 @@ public class Movie {
         return title;
     }
 
-    int getFrequentRenterPoints(int daysRented) {
+    public int getFrequentRenterPoints(int daysRented) {
         return price.getFrequentRenterPoints(daysRented);
     }
 

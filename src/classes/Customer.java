@@ -1,6 +1,5 @@
-package Class;
+package classes;
 
-import java.lang.*;
 import java.util.*;
 
 public class Customer {
