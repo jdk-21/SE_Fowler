@@ -1,3 +1,5 @@
+package Class;
+
 public class Movie {
     public static final int CHILDREN = 2;
     public static final int REGULAR = 0;
@@ -7,7 +9,7 @@ public class Movie {
     Price price;
     public Movie(String newTitle, int newPriceCode) {
         title = newTitle;
-        setPriceCode(priceCode);
+        setPriceCode(newPriceCode);
     }
     public int getPriceCode() {
         return price.getPriceCode();
@@ -24,7 +26,7 @@ public class Movie {
                 price = new NewReleasePrice();
                 break;
             default:
-                throw new IllegalArgumentException("Incorrect Price Code");
+                throw new IllegalArgumentException("Incorrect Class.Price Code");
         }
     }
     public String getTitle (){
@@ -33,6 +35,10 @@ public class Movie {
 
     int getFrequentRenterPoints(int daysRented) {
         return price.getFrequentRenterPoints(daysRented);
+    }
+
+    public double getCharge(int daysRented) {
+        return price.getCharge(daysRented);
     }
 
 }

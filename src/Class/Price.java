@@ -1,3 +1,5 @@
+package Class;
+
 abstract class Price {
     abstract int getPriceCode();
 

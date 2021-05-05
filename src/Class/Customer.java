@@ -1,8 +1,9 @@
+package Class;
 
 import java.lang.*;
 import java.util.*;
 
-class Customer {
+public class Customer {
     private final String name;
     private final Vector<Rental> rentals = new Vector<>();
     public Customer (String newName){

@@ -1,3 +1,5 @@
+package Class;
+
 public class RegularPrice extends Price {
     @Override
     int getPriceCode() {
